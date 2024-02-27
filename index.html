@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="body-background" class="temp-based-decor-default">
+        <div id="inputs">
+            <div>
+                <label>City:</label>
+                <input id="city"><br>
+            </div>
+            <div>
+                <label>State (Use two letter state ID):</label>
+                <input id="state" list="states"><br>
+                    <datalist id="states">
+                        <option value="OH"></option>
+                        <option value="PA"></option>
+                        <option value="CA"></option>
+                        <option value="FL"></option>
+                        <option value="GA"></option>
+                        <option value="HI"></option>
+                        <option value="ID"></option>
+                        <option value="IL"></option>
+                        <option value="NY"></option>
+                        <option value="DC"></option>
+                    </datalist>
+            </div>
+            <div>
+                <label>Country (Use 3 letter country code IE: USA):</label>
+                <input id="country"><br>
+            </div>
+            <div>
+                <button id="submit-button">submit</button>
+            </div>
+        </div>
+
+        <p id="location">Location</p>
+
+        <p id="current-weather">Temperature</p>
+
+        <p id="weather">Weather</p>
+
+        <p id="emoji">🌡️</p>
+
+        <div id="flex-temps">
+            <p id="current-low">Today's Low</p>
+            <p id="feels-like">Feels Like</p>
+            <p id="current-high">Today's High</p>
+        </div>
+    </body>
+    <script src="weather.js"></script>
+</html>
